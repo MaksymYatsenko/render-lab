@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route("/") 
 def home(): 
-    student = os.environ.get("STUDENT_NAME", "Яценко Максим") 
-    return f"Hello from Render! Застосунок розгорнув: {student}" 
+    student = os.environ.get("STUDENT_NAME", "Невідомий студент") 
+    return f"Hello from Render! Застосунок розгорнув: {student} групи КТ-23" 
 
 @app.route("/health") 
 def health(): 
